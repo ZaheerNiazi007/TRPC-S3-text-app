@@ -1,17 +1,17 @@
-import mongoose from 'mongoose'
+import mongoose from "mongoose";
 
 const chatsSchema = new mongoose.Schema(
   {
     title: String,
   },
-  { timestamps: true },
-)
+  { timestamps: true }
+);
 
-let mod: typeof mongoose.Model
+let mod: typeof mongoose.Model;
 try {
-  mod = mongoose.model('chats', chatsSchema)
+  mod = mongoose.model("chats", chatsSchema);
 } catch (e) {
-  mod = mongoose.model('chats')
+  mod = mongoose.model("chats");
 }
 
-export const ChatsModel = mod
+export const ChatsModel = mod;

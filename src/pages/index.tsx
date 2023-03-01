@@ -17,14 +17,13 @@ const Home: NextPage = () => {
   const scrollRef = useRef<HTMLElement>(null);
 
   const { data: list, refetch, isLoading } = trpc.useQuery(["msg.list"]);
-
   const insertMutation = trpc.useMutation(["msg.add"], {
     onSuccess: () => {
       refetch();
     },
   });
+
   useEffect(() => {
-    // console.log('i am user.', user.user_type)
     if (scrollRef?.current) {
       scrollRef.current.scrollIntoView();
     }
@@ -43,14 +42,14 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Chat Room</title>
-        <meta name="description" content="Chat app" />
+        <title>TRPC+S3 text app</title>
+        <meta name="description" content="TRPC CHAT APP" />
       </Head>
 
       <main>
         <Card>
           <CardContent>
-            <CardHeader title="Chat Room" listLength={list?.length ?? 0} />
+            <CardHeader title="TRPC+S3 text app" />
             {isLoading ? (
               <span className="p-2">Hold on.. fetching chats...</span>
             ) : (
@@ -66,6 +65,7 @@ const Home: NextPage = () => {
             value={itemName}
             onChange={(e) => setItemName(e.target.value)}
             submit={sendMessage}
+            Location={""}
           />
         </Card>
       </main>

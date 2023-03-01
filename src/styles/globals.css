@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 * {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
 }
 .box {
   width: 300px;
   margin: 20px 34px;
-  background: #77aedd;
+  background: #0083ff;
   padding: 20px;
   color: #fff;
   font-family: arial;
@@ -24,8 +24,8 @@
   height: 0px;
   position: absolute;
   border-left: 10px solid transparent;
-  border-right: 10px solid #77aedd;
-  border-top: 10px solid #77aedd;
+  border-right: 10px solid #0083ff;
+  border-top: 10px solid #0083ff;
   border-bottom: 10px solid transparent;
   left: -19px;
   top: 6px;
@@ -39,7 +39,7 @@
 }
 /* width */
 ::-webkit-scrollbar {
-  width: 3px;
+  width: 10px;
 }
 
 /* Track */
@@ -49,7 +49,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #77aedd;
+  background: #5bbaea;
 }
 
 /* Handle on hover */
