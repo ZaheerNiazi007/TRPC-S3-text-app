@@ -14,14 +14,6 @@
 - [nextjs](https://nextjs.org/) for [react](https://reactjs.org/) clients and [api routes](https://nextjs.org/docs/api-routes/introduction)
 - [MongoDB](https://www.mongodb.com/) for storage
 
-## Live Demo
-
-[Link to vercel deploy](https://webchat-next-trpc.vercel.app/)
-
-## Screenshot
-![image](https://user-images.githubusercontent.com/84548265/193922187-768b196e-be2a-403a-b8a6-fb7ff365f696.png)
-
-
 ### Prerequisites
 
 The basic requirements for building the executable are:
@@ -37,14 +29,10 @@ The basic requirements for building the executable are:
 
 To get a local copy up and running follow these simple example steps.
 
-### Cloning the project
-
-```
-git clone  https://github.com/Guston-era/webchat-next-trpc.git 
-
 ```
 
 ```
+
 cd <Your-Build-Directory>
 
 ```
@@ -54,7 +42,9 @@ cd <Your-Build-Directory>
 To get all package modules required to build the project run:
 
 ```
+
 npm install or `yarn`
+
 ```
 
 every package module required to build the project is listed in the package.json file. this is used as a reference to get all dependencies.
@@ -64,25 +54,12 @@ every package module required to build the project is listed in the package.json
 To run the program on a browser through a server run this command in your cli
 
 ```
+
 npm run dev
+
 ```
 
 This should open the page in your localhost on port 3000. then you'd be able to view the built page generated.
 
-## 🤝 Contributing
 
-Feel free to check the [issues page](../../issues/).
-
-👤 **Gustone Alwanga**
-
-- GitHub: [@githubhandle](https://github.com/Guston-era)
-
-- LinkedIn: [LinkedIn](https://linkedin.com/in/gustone-alwanga-1a09ba14b/)
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Aerial Ops
+```
