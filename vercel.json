@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "next.config.js",
+      "use": "@vercel/node@latest"
+    }
+  ],
+  "engines": {
+    "node": ">=12.19.0 <17.0.0 || >=17.2.0"
+  }
+}
+
+
+
+
