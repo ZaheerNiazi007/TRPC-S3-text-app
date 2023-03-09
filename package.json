@@ -8,9 +8,7 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "engines": {
-  "node": ">=12.19.0 <17.0.0 || >=17.2.0"
-}
+
   "dependencies": {
     "@fontsource/poppins": "^4.5.8",
     "@trpc/client": "^9.26.2",
