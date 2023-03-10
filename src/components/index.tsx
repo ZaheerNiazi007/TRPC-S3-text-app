@@ -106,31 +106,31 @@ export const CardForm: NextPage<CardFormProps> = ({
   submit,
   Location,
 }) => {
-  const [imageUrl, setImageUrl] = React.useState<string>("");
-  process.env.AWS_SDK_LOAD_CONFIG = "1";
-  const s3 = new AWS.S3({
-    accessKeyId: "aws access id",
-    secretAccessKey: "secretAccessId Key",
-    region: "your region",
-  });
+  // const [imageUrl, setImageUrl] = React.useState<string>("");
+  // process.env.AWS_SDK_LOAD_CONFIG = "1";
+  // const s3 = new AWS.S3({
+  //   accessKeyId: "aws access id",
+  //   secretAccessKey: "secretAccessId Key",
+  //   region: "your region",
+  // });
 
-  const uploadImageToS3 = async (file: File): Promise<string> => {
-    const params = {
-      Bucket: "you bucket",
-      Key: `images/${file.name}`,
-      Body: file,
-      ACL: "public-read",
-    };
+  // const uploadImageToS3 = async (file: File): Promise<string> => {
+  //   const params = {
+  //     Bucket: "you bucket",
+  //     Key: `images/${file.name}`,
+  //     Body: file,
+  //     ACL: "public-read",
+  //   };
 
-    const { Location } = (await s3.upload(params).promise()) as UploadResponse;
+  //   const { Location } = (await s3.upload(params).promise()) as UploadResponse;
 
-    return Location;
-  };
+  //   return Location;
+  // };
 
-  const handleImageChange = async (file: File) => {
-    const url = await uploadImageToS3(file);
-    setImageUrl(url);
-  };
+  // const handleImageChange = async (file: File) => {
+  //   const url = await uploadImageToS3(file);
+  //   setImageUrl(url);
+  // };
 
   return (
     <div className="bg-white w-5/6 md:w-4/6 lg:w-3/6 xl:w-2/6 rounded-lg drop-shadow-md mt-4">
@@ -151,7 +151,7 @@ export const CardForm: NextPage<CardFormProps> = ({
           Send
         </button>
 
-        <input
+        {/* <input
           type="file"
           accept="image/*"
           onChange={(e) => {
@@ -163,13 +163,13 @@ export const CardForm: NextPage<CardFormProps> = ({
           className="block m-2 w-half text-sm text-gray-900 border border-gray-300  cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
           aria-describedby="file_input_help"
           id="file_input"
-        />
-        <p
+        /> */}
+        {/* <p
           className="ml-2 mb-1 text-sm text-gray-500 dark:text-gray-300"
           id="file_input_help"
         >
           SVG, PNG, JPG or GIF
-        </p>
+        </p> */}
       </div>
     </div>
   );
